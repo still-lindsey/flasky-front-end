@@ -1,12 +1,11 @@
 import React from "react";
 
-const Dog = () => {
+const Dog = ({name, favoriteToy, chipNumber}) => {
   return (
     <li>
-      <h3>Dog Name</h3>
-      <span>Owner: Name</span>
-      <span>Tag #: 123</span>
-      <button>Add tag</button>
+      <h3>{name}</h3>
+      <span>Favorite toy: {favoriteToy} </span>
+      <span>Chip #: {chipNumber} </span>
     </li>
   )
 }
